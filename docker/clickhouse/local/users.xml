@@ -2,7 +2,8 @@
 <clickhouse>
     <profiles>
         <default>
-            <max_memory_usage>10000000000</max_memory_usage>
+            <max_memory_usage>21474836480</max_memory_usage>
+            <max_memory_usage_for_user>32212254720</max_memory_usage_for_user>
             <use_uncompressed_cache>0</use_uncompressed_cache>
             <load_balancing>in_order</load_balancing>
             <log_queries>1</log_queries>
