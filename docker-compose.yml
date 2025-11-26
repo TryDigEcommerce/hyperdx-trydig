@@ -53,12 +53,12 @@ services:
       HYPERDX_LOG_LEVEL: info
       OPAMP_SERVER_URL: 'http://app:4320'
       GOMEMLIMIT: '15GiB'
-    ports:
-      - '13133:13133'
-      - '24225:24225'
-      - '4317:4317'
-      - '4318:4318'
-      - '8888:8888'
+    expose:
+      - '13133'
+      - '24225'
+      - '4317'
+      - '4318'
+      - '8888'
     networks:
       - internal
     depends_on:
@@ -72,9 +72,9 @@ services:
 
   app:
     image: docker.hyperdx.io/hyperdx/hyperdx:latest
-    ports:
-      - '8000:8000'
-      - '8080:8080'
+    expose:
+      - '8000'
+      - '8080'
     environment:
       FRONTEND_URL: 'http://localhost:8080'
       HYPERDX_API_PORT: '8000'
