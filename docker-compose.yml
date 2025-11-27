@@ -76,10 +76,10 @@ services:
       - '8000'
       - '8080'
     environment:
-      FRONTEND_URL: 'https://hyperdx.hammern.trydig.io'
+      FRONTEND_URL: 'https://hyperdx.trydig.io'
       HYPERDX_API_PORT: '8000'
       HYPERDX_APP_PORT: '8080'
-      HYPERDX_APP_URL: 'https://hyperdx.hammern.trydig.io'
+      HYPERDX_APP_URL: 'https://hyperdx.trydig.io'
       HYPERDX_LOG_LEVEL: info
       MINER_API_URL: 'http://miner:5123'
       MONGO_URI: 'mongodb://db:27017/hyperdx'
